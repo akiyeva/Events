@@ -43,7 +43,20 @@ namespace Events
         public SavingAccount(decimal balance) : base(balance)
         {
         }
+
+        public void Withdraw(decimal amount)
+        {
+            if (Balance >= amount)
+            {
+                Balance -= amount;
+            }
+            else
+            {
+                OnOverdrawnEventHandler(amount - Balance);
+            }
+        }
     }
+
 
     internal class BankAccount
     {
@@ -54,8 +67,8 @@ namespace Events
         public BankAccount(decimal balance)
         {
             Balance = balance;
-            OverdrawnEventHandler = new EventHandler(OverdrawnEventMethod);      
-        }   
+            OverdrawnEventHandler = new EventHandler(OverdrawnEventMethod);
+        }
 
         public virtual void OnOverdrawnEventHandler(decimal subAmount)
         {
@@ -71,10 +84,19 @@ namespace Events
         private void OverdrawnEventMethod(object sender, EventArgs e)
         {
             OverdrawnEventArgs args = (OverdrawnEventArgs)e;
-            MainAccount bankAccount = (MainAccount)sender;
 
-            MessageBox.Show("Balansinda pul yoxdur " + args.SubAmount + " " + (bankAccount.Balance + bankAccount.SavingAccount.Balance));
+            if (sender is MainAccount bankAccount)
+            {
+                MessageBox.Show("Main Account: Balansinda pul yoxdur " + args.SubAmount +
+                                ". Current balance: " + (bankAccount.Balance + bankAccount.SavingAccount.Balance));
+            }
+            else if (sender is SavingAccount savingAccount)
+            {
+                MessageBox.Show("Saving Account: Balansinda pul yoxdur " + args.SubAmount +
+                                ". Current balance: " + savingAccount.Balance);
+            }
         }
+
 
         public decimal GetBalance() => Balance;
     }
@@ -86,6 +108,6 @@ namespace Events
             SubAmount = subAmount;
         }
 
-        public decimal SubAmount { get; set; }       
+        public decimal SubAmount { get; set; }
     }
 }

@@ -54,9 +54,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(17, 53);
+            this.label1.Location = new System.Drawing.Point(19, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 32);
+            this.label1.Size = new System.Drawing.Size(126, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Balans:";
             // 
@@ -64,9 +64,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(17, 141);
+            this.label2.Location = new System.Drawing.Point(19, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 32);
+            this.label2.Size = new System.Drawing.Size(141, 38);
             this.label2.TabIndex = 1;
             this.label2.Text = "Məxaric:";
             // 
@@ -74,34 +74,37 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(17, 97);
+            this.label3.Location = new System.Drawing.Point(19, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 32);
+            this.label3.Size = new System.Drawing.Size(138, 38);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mədaxil:";
             // 
             // txtMainAccountBalance
             // 
             this.txtMainAccountBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMainAccountBalance.Location = new System.Drawing.Point(149, 54);
+            this.txtMainAccountBalance.Location = new System.Drawing.Point(168, 68);
+            this.txtMainAccountBalance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMainAccountBalance.Name = "txtMainAccountBalance";
-            this.txtMainAccountBalance.Size = new System.Drawing.Size(100, 30);
+            this.txtMainAccountBalance.Size = new System.Drawing.Size(112, 35);
             this.txtMainAccountBalance.TabIndex = 3;
             // 
             // txtMainAccountWithdrawValue
             // 
             this.txtMainAccountWithdrawValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMainAccountWithdrawValue.Location = new System.Drawing.Point(149, 142);
+            this.txtMainAccountWithdrawValue.Location = new System.Drawing.Point(168, 178);
+            this.txtMainAccountWithdrawValue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMainAccountWithdrawValue.Name = "txtMainAccountWithdrawValue";
-            this.txtMainAccountWithdrawValue.Size = new System.Drawing.Size(100, 30);
+            this.txtMainAccountWithdrawValue.Size = new System.Drawing.Size(112, 35);
             this.txtMainAccountWithdrawValue.TabIndex = 4;
             // 
             // txtMainAccountDepositValue
             // 
             this.txtMainAccountDepositValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMainAccountDepositValue.Location = new System.Drawing.Point(149, 98);
+            this.txtMainAccountDepositValue.Location = new System.Drawing.Point(168, 122);
+            this.txtMainAccountDepositValue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMainAccountDepositValue.Name = "txtMainAccountDepositValue";
-            this.txtMainAccountDepositValue.Size = new System.Drawing.Size(100, 30);
+            this.txtMainAccountDepositValue.Size = new System.Drawing.Size(112, 35);
             this.txtMainAccountDepositValue.TabIndex = 5;
             // 
             // groupBox1
@@ -113,9 +116,11 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 29);
+            this.groupBox1.Location = new System.Drawing.Point(27, 36);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(282, 191);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(317, 239);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Əsas hesab";
@@ -129,9 +134,11 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox2.Location = new System.Drawing.Point(24, 247);
+            this.groupBox2.Location = new System.Drawing.Point(27, 309);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(282, 191);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(317, 239);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ehtiyyat hesab";
@@ -139,44 +146,47 @@
             // txtSecondAccountBalance
             // 
             this.txtSecondAccountBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtSecondAccountBalance.Location = new System.Drawing.Point(149, 54);
+            this.txtSecondAccountBalance.Location = new System.Drawing.Point(168, 68);
+            this.txtSecondAccountBalance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSecondAccountBalance.Name = "txtSecondAccountBalance";
-            this.txtSecondAccountBalance.Size = new System.Drawing.Size(100, 30);
+            this.txtSecondAccountBalance.Size = new System.Drawing.Size(112, 35);
             this.txtSecondAccountBalance.TabIndex = 3;
             // 
             // txtSecondAccountDepositValue
             // 
             this.txtSecondAccountDepositValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtSecondAccountDepositValue.Location = new System.Drawing.Point(149, 98);
+            this.txtSecondAccountDepositValue.Location = new System.Drawing.Point(168, 122);
+            this.txtSecondAccountDepositValue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSecondAccountDepositValue.Name = "txtSecondAccountDepositValue";
-            this.txtSecondAccountDepositValue.Size = new System.Drawing.Size(100, 30);
+            this.txtSecondAccountDepositValue.Size = new System.Drawing.Size(112, 35);
             this.txtSecondAccountDepositValue.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(17, 53);
+            this.label4.Location = new System.Drawing.Point(19, 66);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 32);
+            this.label4.Size = new System.Drawing.Size(126, 38);
             this.label4.TabIndex = 0;
             this.label4.Text = "Balans:";
             // 
             // txtSecondAccountWithdrawValue
             // 
             this.txtSecondAccountWithdrawValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtSecondAccountWithdrawValue.Location = new System.Drawing.Point(149, 142);
+            this.txtSecondAccountWithdrawValue.Location = new System.Drawing.Point(168, 178);
+            this.txtSecondAccountWithdrawValue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSecondAccountWithdrawValue.Name = "txtSecondAccountWithdrawValue";
-            this.txtSecondAccountWithdrawValue.Size = new System.Drawing.Size(100, 30);
+            this.txtSecondAccountWithdrawValue.Size = new System.Drawing.Size(112, 35);
             this.txtSecondAccountWithdrawValue.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(17, 141);
+            this.label5.Location = new System.Drawing.Point(19, 176);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 32);
+            this.label5.Size = new System.Drawing.Size(141, 38);
             this.label5.TabIndex = 1;
             this.label5.Text = "Məxaric:";
             // 
@@ -184,18 +194,19 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(17, 97);
+            this.label6.Location = new System.Drawing.Point(19, 121);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 32);
+            this.label6.Size = new System.Drawing.Size(138, 38);
             this.label6.TabIndex = 2;
             this.label6.Text = "Mədaxil:";
             // 
             // btnMainAccountDeposit
             // 
             this.btnMainAccountDeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnMainAccountDeposit.Location = new System.Drawing.Point(390, 62);
+            this.btnMainAccountDeposit.Location = new System.Drawing.Point(439, 78);
+            this.btnMainAccountDeposit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMainAccountDeposit.Name = "btnMainAccountDeposit";
-            this.btnMainAccountDeposit.Size = new System.Drawing.Size(218, 52);
+            this.btnMainAccountDeposit.Size = new System.Drawing.Size(245, 65);
             this.btnMainAccountDeposit.TabIndex = 8;
             this.btnMainAccountDeposit.Text = "Mədaxil";
             this.btnMainAccountDeposit.UseVisualStyleBackColor = true;
@@ -204,9 +215,10 @@
             // btnMainAccountWithdraw
             // 
             this.btnMainAccountWithdraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnMainAccountWithdraw.Location = new System.Drawing.Point(390, 129);
+            this.btnMainAccountWithdraw.Location = new System.Drawing.Point(439, 161);
+            this.btnMainAccountWithdraw.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMainAccountWithdraw.Name = "btnMainAccountWithdraw";
-            this.btnMainAccountWithdraw.Size = new System.Drawing.Size(218, 52);
+            this.btnMainAccountWithdraw.Size = new System.Drawing.Size(245, 65);
             this.btnMainAccountWithdraw.TabIndex = 9;
             this.btnMainAccountWithdraw.Text = "Məxaric";
             this.btnMainAccountWithdraw.UseVisualStyleBackColor = true;
@@ -215,19 +227,22 @@
             // btnSecondAccountWithdraw
             // 
             this.btnSecondAccountWithdraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSecondAccountWithdraw.Location = new System.Drawing.Point(390, 356);
+            this.btnSecondAccountWithdraw.Location = new System.Drawing.Point(439, 445);
+            this.btnSecondAccountWithdraw.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSecondAccountWithdraw.Name = "btnSecondAccountWithdraw";
-            this.btnSecondAccountWithdraw.Size = new System.Drawing.Size(218, 52);
+            this.btnSecondAccountWithdraw.Size = new System.Drawing.Size(245, 65);
             this.btnSecondAccountWithdraw.TabIndex = 11;
             this.btnSecondAccountWithdraw.Text = "Məxaric";
             this.btnSecondAccountWithdraw.UseVisualStyleBackColor = true;
+            this.btnSecondAccountWithdraw.Click += new System.EventHandler(this.btnSecondAccountWithdraw_Click);
             // 
             // btnSecondAccountDeposit
             // 
             this.btnSecondAccountDeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSecondAccountDeposit.Location = new System.Drawing.Point(390, 289);
+            this.btnSecondAccountDeposit.Location = new System.Drawing.Point(439, 361);
+            this.btnSecondAccountDeposit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSecondAccountDeposit.Name = "btnSecondAccountDeposit";
-            this.btnSecondAccountDeposit.Size = new System.Drawing.Size(218, 52);
+            this.btnSecondAccountDeposit.Size = new System.Drawing.Size(245, 65);
             this.btnSecondAccountDeposit.TabIndex = 10;
             this.btnSecondAccountDeposit.Text = "Mədaxil";
             this.btnSecondAccountDeposit.UseVisualStyleBackColor = true;
@@ -235,15 +250,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 450);
+            this.ClientSize = new System.Drawing.Size(763, 562);
             this.Controls.Add(this.btnSecondAccountWithdraw);
             this.Controls.Add(this.btnSecondAccountDeposit);
             this.Controls.Add(this.btnMainAccountWithdraw);
             this.Controls.Add(this.btnMainAccountDeposit);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

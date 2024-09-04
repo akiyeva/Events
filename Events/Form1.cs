@@ -28,12 +28,6 @@ namespace Events
             txtSecondAccountBalance.Text = _secondAccount.GetBalance().ToString("C");
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            MessageBox.Show("Hello from method");
-        }
-
         private void btnMainAccountDeposit_Click(object sender, EventArgs e)
         {
             if (decimal.TryParse(txtMainAccountDepositValue.Text, out decimal value))
@@ -68,6 +62,16 @@ namespace Events
                 txtMainAccountBalance.Text = _mainAccount.GetBalance().ToString();
                 txtSecondAccountBalance.Text = _secondAccount.GetBalance().ToString();
             }
+        }
+
+        private void btnSecondAccountWithdraw_Click(object sender, EventArgs e)
+        {
+            if (decimal.TryParse(txtSecondAccountWithdrawValue.Text, out decimal value))
+            {
+                _secondAccount.Withdraw(value);
+                txtSecondAccountBalance.Text = _secondAccount.GetBalance().ToString();
+            }
+
         }
     }
 }
